@@ -37,6 +37,7 @@ gem 'paperclip', '~> 6.0.0'
 gem 'rest-client'
 gem 'vcr'
 gem 'webmock'
+gem 'money-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
