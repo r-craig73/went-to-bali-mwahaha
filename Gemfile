@@ -33,6 +33,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'materialize-sass'
+gem 'paperclip', '~> 6.0.0'
+gem 'rest-client'
+gem 'vcr'
+gem 'webmock'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -45,6 +49,9 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'faker'
+  gem 'shoulda-matchers'
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
 end
 
 group :development do
