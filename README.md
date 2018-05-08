@@ -8,13 +8,13 @@
 #### A shoddy e-commerce site that is refactored using AJAX and other features. Using AJAX, authentication and other features to factor the application.
 
 ### List of AJAX refactors
-* Friday (05/04/2018)
+*  05/04/2018-05/08/2018
+- [x] Users should be able to click on a product and show/hide the product detail using AJAX. The product detail should include an image (either Paperclip or an image link), the description, and any other fields you choose to add.
 - [ ] Users should be able to add products to their shopping cart from the index page with AJAX. The item should be added to the shopping cart and the number of items in the cart (shown in the navbar) should update.
-- [ ] Users should be able to click on a product and show/hide the product detail using AJAX. The product detail should include an image (either Paperclip or an image link), the description, and any other fields you choose to add.
 - [ ] Users should be able to remove items from the shopping cart without a page reload. The "delete" link should result in the item being removed from the shopping cart and the total price being updated.
 
 ### List of additional features/refactors
-* Friday (05/04/2018)
+* 05/04/2018-05/08/2018
 - [ ] Ensure that users can't order a negative number of items.
 - [ ] Add flash messages for signing up, signing in and signing out.
 - [ ] Add product update and delete functionality for admins.
@@ -30,8 +30,8 @@
 - [ ] Add further AJAX functionality where it might be useful.
 
 ### List of miscellaneous refactors
-* Friday morning and afternoon (05/04/2018)
 - [x] Add gem dependencies and setup rspec and shoulda matchers.
+* Saturday (05/05/2018)
 - [ ] tbd
 
 #### Things to do

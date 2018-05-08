@@ -3,9 +3,10 @@
 <div class="row">
   <div class="section">
   <% @products.each do |product| %>
-    <div class="col s4">
-      <h4><%= product.name %></h4>
-      <p><%= product.description %></p>
+    <div class="col s4" align="center">
+      <h4 class="click-product-name"><%= link_to product.name, product_path(product), id: "#{product.id}", remote: true %></h4>
+      <div id="product-details-<%= product.id %>">
+      </div>
       <p><%= number_to_currency product.price %></p>
       <%= form_for @order_item do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
@@ -14,5 +15,5 @@
       <% end %>
     </div>
   <% end %>
-</div>
+  </div>
 </div>
