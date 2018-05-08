@@ -9,9 +9,11 @@
       </div>
       <p><%= number_to_currency product.price %></p>
       <%= form_for @order_item, remote: true do |f| %>
+      <div class="input-field">
         <%= f.hidden_field :product_id, value: product.id %>
-        <%= f.number_field :quantity, placeholder: "Input only a positive integer!" %>
-        <span class="waves-effect waves-light btn"><%= f.submit "Add to cart", id: "new-order-item", remote: true %></span>
+        <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+        <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
+      </div>
       <% end %>
     </div>
   <% end %>

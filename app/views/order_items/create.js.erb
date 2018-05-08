@@ -1,0 +1,6 @@
+<% if @order.errors.any? || @order_item.errors.any? %>
+  alert("not valid.");
+<% else %>
+  $('.input-field').append('<%= j render("form") %>')
+  $('.waves-effect').hide()
+<% end %>

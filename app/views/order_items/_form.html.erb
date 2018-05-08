@@ -1,0 +1,8 @@
+<% if !current_order || current_order.order_items.count != 0 %>
+  <li>
+    <%= link_to cart_path do %>
+    <% binding.pry %>
+      Cart <%= current_order.order_items.count %>
+    <% end %>
+  </li>
+<% end %>
